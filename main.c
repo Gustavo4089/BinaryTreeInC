@@ -19,8 +19,12 @@ int main(void){
     printf("Testing From Main\n");
 
     // Showing binary tree in ascending order
-    print_binarytree(root);
-    printf("\n");
+    //print_binarytree(root);
+    //printf("\n");
+
+    // Looking for a value in binary tree
+    search_value(root, (short)15);
+
 
     return 0;
 }

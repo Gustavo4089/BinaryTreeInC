@@ -38,3 +38,24 @@ void print_binarytree(Node *root){
         print_binarytree(root->right);
     }
 }
+
+Node* search_value(Node *root, short value){
+    Node *aux = (Node*) malloc(sizeof(Node));
+    aux = root;
+
+    while(aux != NULL){
+        if(aux->value == value){
+            printf("Value found: %i \n", aux->value);
+            return root;
+        }else{
+            if(value < aux->value){
+                aux = aux->left;
+            }else{
+                aux = aux->right;
+            }
+        }
+    }
+
+    printf("Value Not Found. \n");
+    return root;
+}
