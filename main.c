@@ -9,22 +9,17 @@ int main(void){
     root = init_root(root);
 
     // Creating a list of short interger
-    short list[] = {50,34,89,2,14,100,22};
+    short list[] = {78,61,80,90,79,81,100,85,84,86,62,75,53,55,60,23,12,30,28,38,34,73};
 
     // Populating binarytree
     for(short c=0; c < (sizeof(list)/sizeof(short)); c++){
-        root = insert_node(root, list[c]);
+        root = insert_value(root, list[c]);
     }
 
     printf("Testing From Main\n");
 
-    // Showing binary tree in ascending order
-    //print_binarytree(root);
-    //printf("\n");
-
-    // Looking for a value in binary tree
-    search_value(root, (short)15);
-
+    print_binarytree(root);
+    printf("\n");
 
     return 0;
 }

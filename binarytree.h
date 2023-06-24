@@ -10,8 +10,9 @@ typedef struct node{
 
 
 Node* init_root(Node *root);
-Node* insert_node(Node *root, short value);
+Node* insert_value(Node *root, short value);
 void print_binarytree(Node *root);
-Node* search_value(Node *root, short value);
+short search_value(Node *root, short value);
+Node* remove_value(Node *root, short value);
 
 #endif
